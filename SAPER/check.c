@@ -39,7 +39,7 @@ void check_space(int x, int y, char p_board[x][y], char s_board[x][y], int px, i
         *pola -= 1;
         int pola_wokol[4][2] = {{px-1, py}, {px, py-1}, {px, py+1}, {px+1, py}};
         for(int i=0; i<4; i++) {
-            check_space(x, y, p_board, s_board, pola_wokol[i][0], pola_wokol[i][1], pola, gra, wygrana, 1);
+            check_space(x, y, p_board, s_board, pola_wokol[i][0], pola_wokol[i][1], pola, gra, wygrana, 0);
         }
         return;
     }
