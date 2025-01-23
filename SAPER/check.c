@@ -3,19 +3,19 @@
 #include "check.h"
 
 void printboard(int x, int y, char board[x][y]) {
-    printf("    ");
+    printf("      ");
     for(int i=0; i<x; i++) {
-        printf("%d ", i);
+        printf("%-3d ", i);
     }
     printf("\n    -");
-    for(int i=0; i<x-1; i++) {
-        printf("--");
+    for(int i=0; i<x; i++) {
+        printf("----");
     }
     printf("\n");
     for(int i = 0; i<x; i++) {
-        printf("%d | ", i);
+        printf("%-3d | ", i);
         for(int j = 0; j<y; j++) {
-            printf("%c ", board[i][j]);
+            printf("%-3c ", board[i][j]);
         }
         printf("\n");
     }
